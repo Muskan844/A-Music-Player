@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,1,0" />
+   <link rel="stylesheet" href="style.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;1,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="top-bar">
+            <i class="material-symbols-outlined">
+                expand_more
+            </i>
+            <span>Now Playing</span>
+            <i class="material-symbols-outlined">
+                more_horiz
+                </i>
+        </div>
+        <div class="img-area">
+            <img src="" alt="">
+        </div>
+        <div class="song-details">
+            <p class="name">Mitwaa</p>
+            <p class="artist">Shankar Mahadevan</p>
+        </div>
+        <div class="progress-area">
+            <div class="progress-bar">
+                <audio id="main-audio" src=""></audio>
+            </div>
+            <div class="song-timer">
+                <span class="current-time">0:10</span>
+                <span class="max-duration">3:20</span>
+            </div>
+        </div>
+        <div class="controls">
+            <i id="repeat" class="material-symbols-outlined" title="Playlist looped">
+                repeat
+                </i>
+            <i id="prev" class="material-symbols-outlined">
+                    skip_previous
+                    </i>
+            <div class="play-pause">
+                <i class="material-symbols-outlined">
+                    play_arrow
+                    </i>
+            </div>
+            <i id="next" class="material-symbols-outlined">
+                skip_next
+                </i>
+            <i id="more_songs" class="material-symbols-outlined">
+                    queue_music
+                    </i>
+        </div>
+        <div class="music-list">
+            <div class="header">
+                <div class="row">
+                    <i class="material-symbols-outlined">queue_music</i>
+                    <span>Music List</span>
+                </div>
+                <i id="close" class="material-symbols-outlined" >close</i>
+            </div>
+            <ul>
+            </ul>
+        </div>
+    </div>
+    <script src="index.js"></script>
+
+
+</body>
+
+</html>
